@@ -1,0 +1,39 @@
+textarea {
+  border: 3px solid #cccccc;
+  box-sizing: border-box; 
+  width: 100%; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16pt;
+  background-color: #fffffe;
+}
+body {
+  background-color: #fffffb;
+  color: #121213;
+  font-size: 16pt;
+}
+#container {
+  width: 70%;
+  max-width: 1000px;
+  min-width: 500px;
+  margin: auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.rememberance {
+  display: inline-block;
+  width: 100%;
+}
+.rText {
+  float:left;
+  width: 85%;
+}
+.upvote {
+  float: right;
+  font-weight: bold;
+  padding-left: 3px;
+}
+.downvote {
+  float: right;
+  font-weight: bold;
+  padding-left: 3px;
+}

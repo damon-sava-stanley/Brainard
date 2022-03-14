@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>I Remember</title>
+  <meta charset="UTF-8">
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/main.css"></style>
+</head>
+<body>
+  <div id="container" class="container">
+    <form id="rform" action="javascript:submitRememberanceForm('rformtext', 'rememberanceContainer')">
+      <textarea id="rformtext" class="rInput" 
+               rows="1" cols="60" form="rform">I remember </textarea>
+      <input type="submit" style="display: none"/>
+    </form>
+    <div id="rememberanceContainer" data-limit="100", data-offset="0" />
+  </div>
+  
+  <script>listRememberancesOnto('rememberanceContainer');</script>
+  <script>
+function submitOnEnter(event){
+  if(event.which === 13){
+      event.target.form.dispatchEvent(new Event("submit", {cancelable: true}));
+      event.preventDefault(); // Prevents the addition of a new line in the text field (not needed in a lot of cases)
+  }
+}
+
+document.getElementById("rformtext").addEventListener("keypress", submitOnEnter);
+
+  </script>
+</body>
+</html>

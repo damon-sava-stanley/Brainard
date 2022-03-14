@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "none",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outDir": "static/js",
+    "sourceMap": true
+  },
+  "include": ["ts/src/**/*"],
+  "exclude": ["ts/src/gen/**/*", "**/*.spec.ts"]
+}
